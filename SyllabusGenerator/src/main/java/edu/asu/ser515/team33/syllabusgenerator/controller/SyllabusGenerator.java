@@ -1,4 +1,4 @@
-public class Syllabus Generator {
+public class SyllabusGenerator {
 
 	private Controller controller;
 
@@ -8,7 +8,7 @@ public class Syllabus Generator {
 
 	public void printFunction() {
 
-		System.out.print("Syllabus Created. . .");
+		System.out.println("Syllabus Created. . .");
 
 	}
 
