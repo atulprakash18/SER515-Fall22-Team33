@@ -5,6 +5,21 @@ public class Section {
     private int order;
     private String title;
     private String content;
-    private String contentAsHtml;
-    private boolean isRequired;
+
+    public Section(String id, int order, String title, String content) {
+        this.id = id;
+        this.order = order;
+        this.title = title;
+        this.content = content;
+    }
+
+    @Override
+    public String toString() {
+        return "Section{" +
+                "id='" + id + '\'' +
+                ", order=" + order +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                '}';
+    }
 }

@@ -1,11 +1,7 @@
 {
   "id": "ASU",
   "name": "Arizona State University",
-  "academicCalendar": {
-    "url": "",
-    "domSelector": ""
-  },
-  "termsUrl": "",
+  "termsUrl": "dummyUrl",
   "subjectsUrl": "",
   "classesUrl": "",
   "coursesUrl": "",
