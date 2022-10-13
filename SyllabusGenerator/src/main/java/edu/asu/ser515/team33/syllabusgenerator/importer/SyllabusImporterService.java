@@ -1,4 +1,4 @@
-package main.java.edu.asu.ser515.team33.syllabusgenerator.importer;
+package edu.asu.ser515.team33.syllabusgenerator.importer;
 
 import edu.asu.ser515.team33.syllabusgenerator.syllabus.Syllabus;
 
