@@ -1,5 +1,7 @@
 package edu.asu.ser515.team33.syllabusgenerator;
 
+import edu.asu.ser515.team33.syllabusgenerator.generator.SyllabusGeneratorService;
+import edu.asu.ser515.team33.syllabusgenerator.generator.SyllabusGeneratorServiceImpl;
 import edu.asu.ser515.team33.syllabusgenerator.scraper.BasicWebContentWatcher;
 import edu.asu.ser515.team33.syllabusgenerator.scraper.WebContent;
 import edu.asu.ser515.team33.syllabusgenerator.util.ConfigUtil;
@@ -14,5 +16,8 @@ public class MainApplication {
         for (WebContent webContent : webContentWatchers) {
             new Timer().scheduleAtFixedRate(new BasicWebContentWatcher(webContent), 0, 10000);
         }
+
+        SyllabusGeneratorService service = new SyllabusGeneratorServiceImpl();
+        System.out.println(service.generateSyllabus("SER515"));
     }
 }

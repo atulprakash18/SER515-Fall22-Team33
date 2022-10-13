@@ -13,16 +13,32 @@ public class Section {
         this.content = content;
     }
 
+    public String getId() {
+        return id;
+    }
+
     public void setId(String id) {
         this.id = id;
+    }
+
+    public int getOrder() {
+        return order;
     }
 
     public void setOrder(int order) {
         this.order = order;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getContent() {
+        return content;
     }
 
     public void setContent(String content) {
@@ -31,6 +47,6 @@ public class Section {
 
     @Override
     public String toString() {
-        return "Section{" + "id='" + id + '\'' + ", order=" + order + ", title='" + title + '\'' + ", content='" + content + '\'' + '}';
+        return "Section{" + "title='" + title + '\'' + ", content='" + content + '\'' + '}';
     }
 }

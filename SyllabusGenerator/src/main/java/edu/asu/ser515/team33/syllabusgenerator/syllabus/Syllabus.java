@@ -54,4 +54,11 @@ public class Syllabus {
     public void addSection(Section section) {
         this.sections.add(section);
     }
+
+    @Override
+    public String toString() {
+        return "Syllabus{" +
+                "sections=" + sections +
+                '}';
+    }
 }

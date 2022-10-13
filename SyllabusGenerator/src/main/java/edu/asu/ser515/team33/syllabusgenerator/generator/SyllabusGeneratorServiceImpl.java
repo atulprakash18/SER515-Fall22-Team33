@@ -8,8 +8,10 @@ import edu.asu.ser515.team33.syllabusgenerator.syllabus.Syllabus;
 public class SyllabusGeneratorServiceImpl implements SyllabusGeneratorService {
     @Override
     public Syllabus generateSyllabus(String courseId) {
-        SyllabusDirector director = new SyllabusDirector(courseId);
-        SyllabusBuilder syllabusBuilder = new BasicSyllabusBuilder();
+        // Fetch collegeId using the courseId
+        String collegeId = "IAFSE"; // Using dummy value over here
+        SyllabusDirector director = new SyllabusDirector();
+        SyllabusBuilder syllabusBuilder = new BasicSyllabusBuilder(collegeId, courseId);
         director.constructSyllabus(syllabusBuilder);
 
         return syllabusBuilder.getSyllabus();
