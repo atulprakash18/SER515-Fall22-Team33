@@ -2,7 +2,7 @@ package edu.asu.ser515.team33.syllabusgenerator.syllabus;
 
 import java.net.URL;
 
-public class Professor extends Person {
+public abstract class Professor extends Person {
     private String designation;
     private String institution;
     private String officeAddress;
