@@ -11,6 +11,7 @@ public class SyllabusGeneratorAdapter implements Canvas {
 
     @Override
     public void generateSyllabus(String courseId) {
+        System.out.println("Canvas using SyllabusGeneratorAdapter to communicate with SyllabusGeneratorController");
         this.syllabusGeneratorController.initiateSyllabusGenerationWorkflow(courseId);
     }
 }

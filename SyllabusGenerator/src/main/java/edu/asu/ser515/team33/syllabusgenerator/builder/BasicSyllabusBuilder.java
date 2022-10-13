@@ -19,7 +19,7 @@ public class BasicSyllabusBuilder implements SyllabusBuilder {
     }
 
     public void buildCourseId() {
-        syllabus.setCourseId("");
+        syllabus.setCourseId(courseId);
     }
 
     public void buildCourseTitle() {
