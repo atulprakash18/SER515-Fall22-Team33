@@ -1,14 +1,14 @@
-package edu.asu.ser515.team33.syllabusgenerator.generator.builder;
+package edu.asu.ser515.team33.syllabusgenerator.builder;
 
 import edu.asu.ser515.team33.syllabusgenerator.syllabus.Section;
 import edu.asu.ser515.team33.syllabusgenerator.syllabus.Syllabus;
 
 import java.time.LocalDateTime;
 
-public class CourseSyllabusBuilder implements SyllabusBuilder {
+public class BasicSyllabusBuilder implements SyllabusBuilder {
     private Syllabus syllabus;
 
-    public CourseSyllabusBuilder() {
+    public BasicSyllabusBuilder() {
         this.syllabus = new Syllabus();
     }
 
@@ -29,12 +29,8 @@ public class CourseSyllabusBuilder implements SyllabusBuilder {
     }
 
     public void buildSections() {
-        Section section = new Section();
-        syllabus.addSections(section);
-    }
-
-    public void buildSchool() {
-        syllabus.setSchool("");
+        Section section = new Section("id", 1, "title", "content");
+        syllabus.addSection(section);
     }
 
     public Syllabus getSyllabus() {

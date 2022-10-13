@@ -31,11 +31,6 @@ public class Section {
 
     @Override
     public String toString() {
-        return "Section{" +
-                "id='" + id + '\'' +
-                ", order=" + order +
-                ", title='" + title + '\'' +
-                ", content='" + content + '\'' +
-                '}';
+        return "Section{" + "id='" + id + '\'' + ", order=" + order + ", title='" + title + '\'' + ", content='" + content + '\'' + '}';
     }
 }

@@ -1,8 +1,11 @@
 package edu.asu.ser515.team33.syllabusgenerator.builder;
 
-import edu.asu.ser515.team33.syllabusgenerator.syllabus.Syllabus;
-
 public class SyllabusDirector {
+    private final String courseId;
+
+    public SyllabusDirector(String courseId) {
+        this.courseId = courseId;
+    }
 
     public void constructSyllabus(SyllabusBuilder syllabusBuilder) {
         syllabusBuilder.buildCourseId();
