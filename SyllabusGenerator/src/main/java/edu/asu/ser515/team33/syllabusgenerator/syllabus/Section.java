@@ -5,7 +5,13 @@ public class Section {
     private int order;
     private String title;
     private String content;
-    private boolean isRequired;
+
+    public Section(String id, int order, String title, String content) {
+        this.id = id;
+        this.order = order;
+        this.title = title;
+        this.content = content;
+    }
 
     public void setId(String id) {
         this.id = id;
@@ -23,7 +29,13 @@ public class Section {
         this.content = content;
     }
 
-    public void setRequired(boolean required) {
-        isRequired = required;
+    @Override
+    public String toString() {
+        return "Section{" +
+                "id='" + id + '\'' +
+                ", order=" + order +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                '}';
     }
 }

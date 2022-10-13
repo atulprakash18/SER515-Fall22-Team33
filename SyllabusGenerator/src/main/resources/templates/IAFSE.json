@@ -57,8 +57,8 @@
       "isRequired": true,
       "isExternal": true,
       "externalRef": {
-        "url": "",
-        "selector": ""
+        "url": "https://www.asu.edu/a",
+        "selector": "a"
       }
     },
     {
@@ -68,8 +68,8 @@
       "isRequired": true,
       "isExternal": true,
       "externalRef": {
-        "url": "",
-        "selector": ""
+        "url": "https://www.asu.edu/iafse",
+        "selector": "iafse"
       }
     },
     {
@@ -79,8 +79,8 @@
       "isRequired": true,
       "isExternal": true,
       "externalRef": {
-        "url": "",
-        "selector": ""
+        "url": "https://www.asu.edu/b",
+        "selector": "b"
       }
     },
     {
@@ -89,9 +89,9 @@
       "order": 11,
       "isRequired": true,
       "isExternal": true,
-      "external": {
-        "url": "",
-        "selector": ""
+      "externalRef": {
+        "url": "https://www.asu.edu/c",
+        "selector": "c"
       }
     },
     {
