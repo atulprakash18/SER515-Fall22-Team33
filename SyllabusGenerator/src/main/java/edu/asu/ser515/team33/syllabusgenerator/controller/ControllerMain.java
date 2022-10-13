@@ -1,5 +1,4 @@
 import java.io.InputStream;
-package edu.asu.ser515.team33.syllabusgenerator.importer;
 import edu.asu.ser515.team33.syllabusgenerator.syllabus;
 import edu.asu.ser515.team33.syllabusgenerator.controller;
 
@@ -22,7 +21,7 @@ public class Controller  {
 
         Exporter export = new Exporter();
         
-        syllabus = export.exportSyllabus();  // Exporting Syllabus
+        export.exportSyllabus();  // Exporting Syllabus
         export.printFunction();
         
     }

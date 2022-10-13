@@ -1,9 +1,13 @@
+import java.io.InputStream;
+
 public interface Controller {
 
-	public abstract void syllabusImporterService();
+	public:
 
-	public abstract void syllabusGeneratorService();
+	public abstract void parseFile(Inputstream file);
 
-	public abstract void syllabusExporterService();
+	public abstract void populateSection();
+
+	public abstract void exportSyllabus();
 
 }
