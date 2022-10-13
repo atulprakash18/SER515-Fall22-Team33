@@ -6,7 +6,15 @@ import java.util.TimerTask;
 
 public abstract class WebContentWatcher extends TimerTask {
     private final List<WebContentListener> listeners = new ArrayList<>();
-    private WebContent resource;
+    private final WebContent resource;
+
+    public WebContentWatcher(WebContent resource) {
+        this.resource = resource;
+    }
+
+    public WebContent getResource() {
+        return resource;
+    }
 
     public void addListener(WebContentListener listener) {
         listeners.add(listener);

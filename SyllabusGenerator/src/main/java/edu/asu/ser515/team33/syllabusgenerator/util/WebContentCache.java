@@ -13,10 +13,10 @@ public class WebContentCache {
         this.cacheStore = new ConcurrentHashMap<>();
     }
 
-    public WebContentCache getCache() {
+    public static WebContentCache getCache() {
         WebContentCache localRef = INSTANCE;
         if (localRef == null) {
-            synchronized (this) {
+            synchronized (WebContentCache.class) {
                 localRef = INSTANCE;
                 if (localRef == null) {
                     INSTANCE = localRef = new WebContentCache();
