@@ -1,4 +1,4 @@
-# SyllabusGenerator
+# edu.asu.ser515.team33.syllabusgenerator.decorator.SyllabusGenerator
 
 ## Build
 ``mvn clean package``
